@@ -1,3 +1,8 @@
+# Metatransactions and Signature Replay
+This project was carried out as part of the Senior Path offered by [https://learnweb3.io](https://learnweb3.io).
+
+Most of the code comes from the course
+
 ## Main point
 **Actors**
 - The user needs to sign messages (and not send a transaction) that contain information about the transaction they want to execute and hand it to the relayer. 
@@ -25,7 +30,7 @@ Format of a signed message
 ```
 "\x19Ethereum Signed Message:\n" + len(message) + message)
 ```
-Interesting topic : [https://forum.openzeppelin.com/t/help-understanding-toethsignedmessagehash-recover/20069/3](http://)
+Interesting topic : [https://forum.openzeppelin.com/t/help-understanding-toethsignedmessagehash-recover/20069/3](https://forum.openzeppelin.com/t/help-understanding-toethsignedmessagehash-recover/20069/3)
 
 **ECDSA**
 ECDSA => Elliptic Curve Digital Signature Algorithm
